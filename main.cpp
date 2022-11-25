@@ -6,8 +6,8 @@ int main(){
     int s=1;
     cin>>n;
         cout<<p<<endl<<s<<endl;
-        int i=4;
-        while(i++<=n){
+        int i=3;
+        while(i++<=(n-1)){
             cout<<p+s<<endl;
             if(p<s){
                 p+=s;
