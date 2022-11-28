@@ -1,21 +1,22 @@
 #include <iostream>
 using namespace std;
-int main(){
-    int n=0;
-    int p=1;
-    int s=1;
-    cin>>n;
-        cout<<p<<endl<<s<<endl;
-        int i=3;
-        while(i++<=(n-1)){
-            cout<<p+s<<endl;
-            if(p<s){
-                p+=s;
-            }
-            else {
-                s+=p;
-            }
+int main() {
+    int numero;
+    int primoNumero=1;
+    int secondoNumero=1;
+    cout<<"inserire il numero di cifre della serie di fibonacci da calcolare";
+    cin>>numero;
+    cout<< primoNumero<<endl<<secondoNumero <<endl ;
+        int i = 3;
+        while (i++ <= numero && primoNumero+secondoNumero<=numero) {
+            cout << primoNumero + secondoNumero <<endl;
+            if (primoNumero < secondoNumero)
+                primoNumero += secondoNumero;
+
+            else
+                secondoNumero += primoNumero;
         }
+
 
     return 0;
 }
